@@ -1,0 +1,14 @@
+<header class="brand">
+  <h1>
+    <a href="{{.Site.BaseURL}}">
+      <span id = "blog_logo">
+        <img src={{.Site.Params.logo.url}} alt="Blog Logo" style="height: 40px; width:40px">
+      </span>
+      {{if .IsHome}}
+      <span id = "blog_title">
+        {{.Site.Title}}
+      </span>
+      {{end}}
+    </a>
+  </h1>
+</header>

@@ -1,0 +1,37 @@
+<footer class="page-footer">
+		<hr>
+		<ul class="page-footer-menu">
+		{{ range .Site.Menus.footer }}
+      <li><a href="{{.URL}}">{{.Pre }}{{ .Name }}</a></li>
+		{{ end }}
+		</ul>
+
+  {{ if .Site.Params.showPoweredBy}}
+    <p>
+      Powered by <a href="https://gohugo.io">Hugo</a> and the
+      <a href="https://github.com/shawnohare/hugo-tufte">Tuftesque theme</a>.
+    </p>
+  {{ end }}
+
+	<div class="copyright">
+	<p>
+    {{ with .Site.Params.copyright }}
+      {{ . | safeHTML }}
+    {{ else }}
+      &copy; {{.Now.Format "2006"}}
+    {{ with .Site.Params.copyrightHolder }}{{ . }}{{end}}.
+    All rights reserved.
+    {{end}}
+  </p>
+</div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    });
+    </script>
+    <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</footer>
