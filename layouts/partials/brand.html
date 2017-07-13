@@ -2,7 +2,11 @@
   <h1>
     <a href="{{.Site.BaseURL}}">
       <span id = "blog_logo">
-        <img src=/{{.Site.Params.logo.url}} alt="Blog Logo" style="height: 40px; width:40px">
+        {{if .Site.Params.logo.url eq "logo.png"}}
+          <img src=/{{.Site.Params.logo.url}} alt="Blog Logo" style="height: 40px; width:40px">
+        {{else}}
+          <img src={{.Site.Params.logo.url}} alt="Blog Logo" style="height: 40px; width:40px">
+        {{end}}
       </span>
       {{if .IsHome}}
       <span id = "blog_title">
