@@ -23,16 +23,22 @@
         <div class = "author_info">
           <div class = "contact_info">
               <span class = "name"> {{$authorname}} 
-              
+                
+                {{if isset $author "website"}}
                 <a class = "social_buttons" href = {{$authorwebsite}} >
                     <img style="width:20px;" src = "http://image.flaticon.com/icons/png/128/12/12195.png"/>
                 </a>
+                {{end}}
+                {{if isset $author "twitter"}}
                 <a class="social_buttons" href = {{$authortwitter}}>
                   <img style="width:22px;" src = "https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png"/>
                 </a>
+                {{end}}
+                {{if isset $author "github"}}
                 <a class = "social_buttons" href = {{$authorgithub}} >
                   <img style="width:23px;" src = "https://a248.e.akamai.net/assets.github.com/images/icons/emoji/octocat.png"/>
                 </a>
+                {{end}}
               </span>
               
               
