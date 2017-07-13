@@ -9,9 +9,11 @@
         {{end}}
       </span>
       {{if .IsHome}}
-      <span id = "blog_title">
-        {{.Site.Title}}
-      </span>
+        {{if .Site.Params.showtitle}}
+          <span id = "blog_title">
+            {{.Site.Title}}
+          </span>
+        {{end}}
       {{end}}
     </a>
   </h1>
