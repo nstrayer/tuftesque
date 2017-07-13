@@ -518,10 +518,10 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
     vertical-align: baseline;
     position: relative;
     font-style: italic;
-    border: 1px solid;
+    border-top: 1px double;
+    border-bottom: 1px double;
     margin-left: 0;
-    padding: 1.5px;
-    border-radius: 3px;
+    padding: 4px;
   }
 }
 
