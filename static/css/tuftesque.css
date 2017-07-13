@@ -86,6 +86,10 @@ label.margin-toggle {
   margin-bottom:-10px;
 }
 
+.brand a {
+  background-repeat: no-repeat !important;
+}
+
 #blog_title {
   line-height: 50px;
   float: right;
