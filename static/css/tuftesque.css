@@ -445,10 +445,6 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   div.table-wrapper { 
     border-right: 1px solid #efefef; 
   }
-  img { 
-    width: 100%; 
-    
-  } 
 }
 
 
