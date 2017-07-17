@@ -34,6 +34,10 @@ label.margin-toggle {
   justify-content: center;
 }
 
+#disqus_thread {
+  padding-top: 50px;
+}
+
 .social_buttons {
   padding-left: 8px;
 }
