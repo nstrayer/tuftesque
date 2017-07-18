@@ -5,8 +5,12 @@ body{
 
 code {
   background-color: #f7f7f7;
-  font-size: 0.85em !important;
+  font-size: 0.95em;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 1.0rem;
+  line-height: 1.6; 
 }
+
 
 pre code {
   width: 100% !important;
@@ -495,11 +499,7 @@ div.table-wrapper {
   letter-spacing: .03em; 
 }
 
-.code { 
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.125rem;
-  line-height: 1.6; 
-}
+
 
 h1 .code, h2 .code, h3 .code { 
   font-size: 0.80em; 
