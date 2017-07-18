@@ -22,16 +22,18 @@ label.margin-toggle {
 }
 
 
+/* -------------------------------------- */
+/* Author Info CSS */
+/* -------------------------------------- */
+
 .author_blurb {
   display: flex;
   flex-direction: row;    
   justify-content: flex-start;
   align-items: flex-start;
-  height: 150px;
   text-decoration: none;
   padding-top: 20px;
 }
-
 
 .photo {
   width: 90px;
@@ -45,9 +47,6 @@ label.margin-toggle {
   justify-content: center;
 }
 
-#disqus_thread {
-  padding-top: 0px;
-}
 
 .social_buttons {
   padding-left: 8px;
@@ -57,10 +56,14 @@ label.margin-toggle {
   font-family: "Merriweather", serif;
   letter-spacing: 0.01rem;
   font-size: 1.7rem;
+  padding-right: 15px;
 }
 
 .contact_info{
   align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .contact_info a {
@@ -83,6 +86,36 @@ label.margin-toggle {
   letter-spacing: 0;
   text-indent: 0;
 }
+
+/* small screens */
+@media all and (max-width: 550px) {
+
+  .name{
+    padding-right: 5px;
+  } 
+  
+  .author_blurb {
+    flex-direction: column;    
+  }
+  .author_photo {
+    padding-bottom:12px;
+    align-self: center;
+  }
+  .author_blurb {
+    padding-top: 5px;
+  }
+  .author_info {
+    padding-left: 0px;
+  }
+}
+
+/* END Author Info CSS */
+
+
+#disqus_thread {
+  padding-top: 0px;
+}
+
 
 .main-header {
   width: 100%;
@@ -480,29 +513,9 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
     padding-left: 5% !important;
   }
   
-  #homepage {
-    width: 95%;
-  }
-  
-  .author_blurb {
-    flex-direction: column;    
-  }
-  
-  .author_info{
-    padding-top: 45px;
-  }
-  
-  .author_photo {
-    align-self: center;
-    padding-bottom:12px;
-  }
-  
   #disqus_thread {
-    padding-top: 50px;
   }
-  .author_blurb {
-    padding-top: 5px;
-  }
+
 }
 
 /* Medium screens */
