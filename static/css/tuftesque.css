@@ -1,198 +1,3 @@
-body{
-  padding-left: 0;
-  background-color: #fffff8;
-}
-
-code {
-  background-color: #f7f7f7;
-  font-size: 0.85em !important;
-}
-
-pre code {
-  width: 100% !important;
-  padding-left: 0 !important; 
-}
-
-pre {
-  width: 55%;
-}
-
-label.margin-toggle {
-  display: none !important;
-}
-
-
-/* -------------------------------------- */
-/* Author Info CSS */
-/* -------------------------------------- */
-
-.author_blurb {
-  display: flex;
-  flex-direction: row;    
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-decoration: none;
-  padding-top: 20px;
-}
-
-.photo {
-  width: 90px;
-}
-
-.author_info{
-  width: 100%;
-  display: flex;
-  flex-direction: column;    
-  padding-left: 15px;
-  justify-content: center;
-}
-
-
-.social_links {
-  line-height: 2.5em;
-}
-
-.social_links a {
-  line-height: 2.5em;
-  padding-left: 8px;
-  text-decoration: none;
-}
-
-.name{
-  font-family: "Merriweather", serif;
-  letter-spacing: 0.01rem;
-  font-size: 1.7rem;
-  padding-right: 15px;
-}
-
-.contact_info{
-  align-content: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.contact_info a {
-  background-repeat: no-repeat, no-repeat, no-repeat !important;
-  text-decoration: none !important;
-}
-
-.bio {
-  height: 100px;
-  padding-top: 0px;
-}
-
-.bio_text{
-  padding-top: 5px;
-  margin-top: auto;
-  font-size: 1.2rem;
-  line-height: 1.5em;
-  font-weight: 200;
-  color: #636363;
-  letter-spacing: 0;
-  text-indent: 0;
-}
-
-/* small screens */
-@media all and (max-width: 550px) {
-
-  .name{
-    padding-right: 5px;
-  } 
-  
-  .author_blurb {
-    flex-direction: column;    
-  }
-  .author_photo {
-    padding-bottom:12px;
-    align-self: center;
-  }
-  .author_blurb {
-    padding-top: 5px;
-  }
-  .author_info {
-    padding-left: 0px;
-  }
-}
-
-/* END Author Info CSS */
-
-
-#disqus_thread {
-  padding-top: 0px;
-}
-
-
-.main-header {
-  width: 100%;
-  height: 0;
-  padding-top: 33.33%;
-  position:relative;
-  z-index:-1;
-  margin:0 auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 5px;
-}
-
-
-.brand{
-  margin-bottom:-10px;
-}
-
-.brand a {
-  background-repeat: no-repeat !important;
-}
-
-#blog_title {
-  line-height: 50px;
-  float: right;
-  padding-right: 5px;
-  right: 0;
-}
-
-
-
-#homepage{
-  width: 50%;
-  margin: 0 auto;
-  color: #111111;
-}
-
-#homepage a {
-   color: #4A4A4A;
-}
-
-h1 {
-  font-weight: 400;
-  margin-top: 4rem;
-  margin-bottom: 1.5rem;
-  font-size: 3rem;
-  line-height: 1;
-  text-decoration: none;
-}
-
-h1 a{
-  text-decoration: none;
-}
-
-p {
-  font-size: 1.1em;
-  color: #3a4145;
-  text-rendering: geometricPrecision;
-}
-
-.thumbnail p {
-  width: 100%;
-}
-
-
-span.content-meta {
-  color: #64696e;
-}
-
-
-
 
 /* Import ET Book styles
    adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
@@ -550,3 +355,212 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
     padding: 4px;
   }
 }
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+/* Begin Bespoke CSS with bad principles sectin
+/* -------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+body{
+  padding-left: 0;
+  background-color: #fffff8;
+}
+
+code {
+  background-color: #f7f7f7;
+  font-size: 0.85em !important;
+}
+
+pre code {
+  width: 100% !important;
+  padding-left: 0 !important; 
+}
+
+pre {
+  width: 55%;
+}
+
+label.margin-toggle {
+  display: none !important;
+}
+
+
+/* -------------------------------------- */
+/* Author Info CSS */
+/* -------------------------------------- */
+
+.author_blurb {
+  display: flex;
+  flex-direction: row;    
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  padding-top: 20px;
+}
+
+.photo {
+  width: 90px;
+}
+
+.author_info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;    
+  padding-left: 15px;
+  justify-content: center;
+}
+
+
+.social_links {
+  line-height: 2.5em;
+}
+
+.social_links a {
+  line-height: 2.5em;
+  padding-left: 8px;
+  text-decoration: none;
+  background: none !important;
+}
+
+.name{
+  font-family: "Merriweather", serif;
+  letter-spacing: 0.01rem;
+  font-size: 1.7rem;
+  padding-right: 15px;
+}
+
+.contact_info{
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact_info a {
+  background-repeat: no-repeat, no-repeat, no-repeat !important;
+  text-decoration: none !important;
+}
+
+.contact_info a:active {
+    outline: none;
+}
+
+.bio {
+  height: 100px;
+  padding-top: 0px;
+}
+
+.bio_text{
+  padding-top: 5px;
+  margin-top: auto;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  font-weight: 200;
+  color: #636363;
+  letter-spacing: 0;
+  text-indent: 0;
+}
+
+/* small screens */
+@media all and (max-width: 550px) {
+
+  .name{
+    padding-right: 5px;
+  } 
+  
+  .author_blurb {
+    flex-direction: column;    
+  }
+  .author_photo {
+    padding-bottom:12px;
+    align-self: center;
+  }
+  .author_blurb {
+    padding-top: 5px;
+  }
+  .author_info {
+    padding-left: 0px;
+  }
+}
+
+/* END Author Info CSS */
+
+
+#disqus_thread {
+  padding-top: 0px;
+}
+
+
+.main-header {
+  width: 100%;
+  height: 0;
+  padding-top: 33.33%;
+  position:relative;
+  z-index:-1;
+  margin:0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+
+.brand{
+  margin-bottom:-10px;
+}
+
+.brand a {
+  background-repeat: no-repeat !important;
+}
+
+#blog_title {
+  line-height: 50px;
+  float: right;
+  padding-right: 5px;
+  right: 0;
+}
+
+
+#homepage{
+  width: 50%;
+  margin: 0 auto;
+  color: #111111;
+}
+
+#homepage a {
+   color: #4A4A4A;
+}
+
+h1 {
+  font-weight: 400;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+h1 a{
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.1em;
+  color: #3a4145;
+  text-rendering: geometricPrecision;
+}
+
+.thumbnail p {
+  width: 100%;
+}
+
+
+span.content-meta {
+  color: #64696e;
+}
+
+
+
