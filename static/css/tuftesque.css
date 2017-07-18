@@ -48,8 +48,14 @@ label.margin-toggle {
 }
 
 
-.social_buttons {
+.social_links {
+  line-height: 2.5em;
+}
+
+.social_links a {
+  line-height: 2.5em;
   padding-left: 8px;
+  text-decoration: none;
 }
 
 .name{
