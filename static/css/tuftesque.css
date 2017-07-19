@@ -360,7 +360,6 @@ blockquote footer {
 }
 
 ol, ul { 
-  width: 45%;
   -webkit-padding-start: 5%;
   -webkit-padding-end: 5%; 
 }
