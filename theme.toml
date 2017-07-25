@@ -12,5 +12,6 @@ min_version = 0.15
   homepage = "http://nickstrayer.me"
 
 [params]
+    googleAnalytics = ""
    [params.logo]
       url = "/images/banner.png"
