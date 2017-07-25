@@ -12,6 +12,7 @@ min_version = 0.15
   homepage = "http://nickstrayer.me"
 
 [params]
+    disqus = ""
     googleAnalytics = ""
    [params.logo]
       url = "/images/banner.png"
