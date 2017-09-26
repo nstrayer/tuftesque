@@ -1,9 +1,9 @@
 <section>
   <h1 class="content-title">
   {{ if .IsNode }}
-  <a href="{{ .Permalink }}">{{ .Title}}</a>
+  <a href="{{ .Permalink | relURL }}">{{ .Title}}</a>
   {{ else }}
-  <a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} :: Draft {{end}}</a>
+  <a href="{{ .RelPermalink | relURL}}">{{ .Title }}{{ if .Draft }} :: Draft {{end}}</a>
   {{ end }}
   </h1>
   {{ if .IsPage }}
@@ -12,7 +12,6 @@
   <span class="content-meta">
     
   {{ with .Params.authors }}
-    <p>HI</p>
   {{ end }}
   
   {{ if .Params.author }}
@@ -35,7 +34,7 @@
   <br>
     <i class="fa fa-tags"> </i>
     {{ range .Params.categories }}
-    <a  href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>
+    <a  href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
     {{ end }}
     {{ end }}
     </span>

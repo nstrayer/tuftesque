@@ -1,7 +1,7 @@
 {{if isset .Site.Params.banner "url"}}
   <header 
     class = "main-header" 
-    style='background-image: url({{.Site.Params.banner.url}})'
+    style='background-image: url({{.Site.Params.banner.url | relURL}})'
   >
 {{else}}
   <header 
