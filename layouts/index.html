@@ -15,11 +15,11 @@
 {{ range .Site.Pages }}
   {{if eq .Type "post" }}
     {{if eq .Title "Posts"}}
-      <h2><a href="{{ .RelPermalink  }}">See all posts</a></h2>
+      <h2><a href="{{ .RelPermalink | relURL }}">See all posts</a></h2>
     {{else}}
       {{ partial "content.header.html" . }}
       <p>{{ .Params.excerpt }}</p>
-      <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
+      <p><a href="{{ .RelPermalink | relURL }}">Read On &rarr;</a></p>
       <hr>
     {{ end  }}
   {{ end }}
