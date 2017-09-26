@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 
+<!--  This is the view that you get when you click "see all posts" -->
 <body>
 <div id="layout" class="pure-g">
 <article class="pure-u-1">
@@ -18,7 +19,7 @@
                   <ul>
                     <li>
                       <span class="list-date">{{ .Date.Format "Jan 2" }} &middot;</span>
-                      <a href="{{ .RelPermalink }}">{{.Title}}</a>
+                      <a href="{{ .RelPermalink  | relURL}}">{{.Title}}</a>
                     </li>
                   </ul>
                 {{ end }}

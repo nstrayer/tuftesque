@@ -1,6 +1,6 @@
 {{ .Title  }}
 <!-- {{ template "_internal/pagination.html" }} -->
-Hello this is a list of content.
+This is a list of content.
 {{ .TableOfContents }}
 
 {{ $paginator := .Paginate ( (.Data.Pages.GroupByDate "2006") ) }}
@@ -16,6 +16,6 @@ Hello this is a list of content.
   <h2>{{ .Key }}</h2>
   {{ range .Pages }}
     <br/>
-    <a href="{{ .RelPermalink }}">{{.Title}}</a>
+    <a href="{{ .RelPermalink | relURL }}">{{.Title}}</a>
   {{ end }}
 {{ end }}
