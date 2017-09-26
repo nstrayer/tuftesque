@@ -1,12 +1,8 @@
 <header class="brand">
   <h1>
-    <a href="{{.Site.BaseURL}}">
+    <a href="{{.Site.BaseURL | relURL}}">
       <span id = "blog_logo">
-        {{if eq .Site.Params.logo.url "logo.png"}}
-          <img src=/{{.Site.Params.logo.url}} alt="Blog Logo" style="height: 40px; width:40px">
-        {{else}}
-          <img src={{.Site.Params.logo.url}} alt="Blog Logo" style="height: 40px; width:40px">
-        {{end}}
+         <img src="{{ .Site.Params.logo.url | relURL }}" alt="Blog Logo" style="height: 40px; width:40px">
       </span>
       {{if .IsHome}}
         {{if .Site.Params.showtitle}}

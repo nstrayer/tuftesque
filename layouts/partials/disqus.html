@@ -3,7 +3,8 @@
 <!-- Add Disqus comments. -->
   <div id="disqus_thread"></div>
     <script type="text/javascript">
-      var disqus_shortname = '{{ .Site.Params.disqus }}'; 
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = "{{ .Site.DisqusShortname }}" 
       var disqus_identifier = '{{ .Permalink }}';
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {

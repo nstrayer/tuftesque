@@ -2,7 +2,7 @@
 		<hr>
 		<ul class="page-footer-menu">
 		{{ range .Site.Menus.footer }}
-      <li><a href="{{.URL}}">{{.Pre }}{{ .Name }}</a></li>
+      <li><a href="{{.URL | relURL}}">{{.Pre }}{{ .Name }}</a></li>
 		{{ end }}
 		</ul>
 
@@ -18,7 +18,7 @@
     {{ with .Site.Params.copyright }}
       {{ . | safeHTML }}
     {{ else }}
-      &copy; {{.Now.Format "2006"}}
+      &copy;{{now.Format "2006"}}
     {{ with .Site.Params.copyrightHolder }}{{ . }}{{end}}.
     All rights reserved.
     {{end}}

@@ -1,0 +1,9 @@
+<style>
+body {
+  {{ if (not (isset .Site.Params "backgroundcolor")) | or (eq .Site.Params.backgroundcolor "") }}
+    background-color: #fffff8;
+  {{ else }}
+    background-color:  {{ .Site.Params.backgroundColor}};
+  {{end}}
+}
+</style>
