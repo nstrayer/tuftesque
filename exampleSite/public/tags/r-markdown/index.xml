@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Markdown on A Hugo website</title>
+    <link>/tags/r-markdown/</link>
+    <description>Recent content in R Markdown on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/2015/07/23/hello-r-markdown/</guid>
+      <description>Customizing It would be pretty lame if that was it, wouldn’t it? Fear not, you can tinker with it to make it your own.
+Side Notes: We all know why you’re here: the sidenotes. This is rather easy. Just make sure you have the tufte package installed and then, in an inline r chunk, wherever you want to put a side note call the following.
+tufte::margin_note(&amp;quot;This is a margin note&amp;quot;) The above produces the following: ⊕This is a margin note</description>
+    </item>
+    
+  </channel>
+</rss>

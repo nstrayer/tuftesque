@@ -1,0 +1,16 @@
+name = "tuftesque"
+license = "MIT"
+licenselink = "https://github.com/nstrayer/tuftesque/"
+description = "Hugo/Blogdown theme heavily inspired by Tufte but customized."
+homepage = "http://livefreeordichotomize.com/"
+tags = ["blogdown", "tufte", "minimal"]
+features = ["math", "tufte-css", "tufte"]
+min_version = 0.15
+
+[author]
+  name = "Nick Strayer"
+  homepage = "http://nickstrayer.me"
+
+[params]
+   [params.logo]
+      url = "/images/banner.png"

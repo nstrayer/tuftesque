@@ -1,0 +1,57 @@
+{{$authorName := or .Params.author .Site.Params.author}}
+{{if $authorName}}
+  {{if isset .Site.Data.authors $authorName}}
+    {{$author := index .Site.Data.authors $authorName}}
+    {{$authorname := or $author.name .Site.Params.author }}
+    {{$authorbio := or $author.bio .Site.Params.bio }}
+    {{$authorlocation := or $author.location .Site.Params.author_location }}
+    {{$authorwebsite := or $author.website .Site.Params.author_website }}
+    {{$authortwitter := or $author.twitter .Site.Params.twitter }}
+    {{$authorgithub := or $author.github .Site.Params.github }}
+    {{$authorthumbnail := or $author.thumbnail .Site.Params.author_thumbnail }}
+
+    {{ if eq .Params.bothofus "yes" }}
+    
+    {{else}}
+    <hr/>
+    <div class="author_blurb">
+        <div class="author_photo">
+          <div class="photo">
+            <img style = "border-radius: 25px;" src="{{ $authorthumbnail | relURL }}" alt="{{ $authorname }} image" width="90" height="90">
+          </div>
+        </div>
+        <div class = "author_info">
+          <div class = "contact_info">
+              <span class = "name"> 
+                {{$authorname}} 
+              </span>
+              
+              <span class = "social_links">
+                 {{if isset $author "website"}}
+                  <a class = "social_buttons" href = {{$authorwebsite}} >
+                      <img style="width:20px;" src = "http://image.flaticon.com/icons/png/128/12/12195.png"/>
+                  </a>
+                {{end}}
+                {{if isset $author "twitter"}}
+                  <a class="social_buttons" href = {{$authortwitter}}>
+                    <img style="width:22px;" src = "https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png"/>
+                  </a>
+                {{end}}
+                {{if isset $author "github"}}
+                  <a class = "social_buttons" href = {{$authorgithub}} >
+                    <img style="width:23px;" src = "https://a248.e.akamai.net/assets.github.com/images/icons/emoji/octocat.png"/>
+                  </a>
+                {{end}}
+              </span>  
+              
+          </div>
+          <div class = "bio">
+            <p class = "bio_text">{{$authorbio}}</p>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+  
+  {{end}}
+
+{{end}}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on A Hugo website</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on A Hugo website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello Tuftesque</title>
+      <link>/2017/10/15/hello-tuftesque/</link>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/10/15/hello-tuftesque/</guid>
+      <description>This is an abridged version of the blogpost Introducing The Tuftesque Blogdown Theme on livefreeordichotomize.com.
+Customizing It would be pretty lame if that was it, wouldn’t it? Fear not, you can tinker with it to make it your own.
+Side Notes: We all know why you’re here: the sidenotes. This is rather easy. Just make sure you have the tufte package installed and then, in an inline r chunk, wherever you want to put a side note call the following.</description>
+    </item>
+    
+    <item>
+      <title>A Plain Markdown Post</title>
+      <link>/2016/12/30/a-plain-markdown-post/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      
+      <guid>/2016/12/30/a-plain-markdown-post/</guid>
+      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+ You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>/2015/01/01/lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      
+      <guid>/2015/01/01/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+  </channel>
+</rss>
