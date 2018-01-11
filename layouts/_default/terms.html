@@ -21,7 +21,7 @@
         {{ range $key, $value := .Data.Terms.ByCount }}
           <tr>
             <td>
-            <a href="{{ $value.Name| urlize| relURL }}">
+            <a href="{{ $value.Name| urlize }}">
             {{ $value.Name}}
             </a>
             </td>
