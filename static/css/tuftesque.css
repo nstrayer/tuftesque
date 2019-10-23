@@ -640,3 +640,16 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
     padding: 4px;
   }
 }
+
+/* Style activated by the addition of the lightbox selection class */
+.lightbox-loaded {
+  position: fixed;
+  z-index: 999;
+  width: 90%;
+  height: auto;
+  max-height: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 50px black;
+}
