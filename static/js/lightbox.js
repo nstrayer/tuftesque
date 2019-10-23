@@ -1,3 +1,4 @@
+console.log('Lightbox initiated!');
 const selected_class = 'lightbox-loaded';
 window.addEventListener('load', function() {
   // Select all the windowboxable images
