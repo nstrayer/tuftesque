@@ -618,6 +618,10 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   }
 }
 
+.lightbox img {
+  cursor: zoom-in;
+}
+
 /* Style activated by the addition of the lightbox selection class */
 .lightbox-loaded {
   position: fixed;
@@ -629,4 +633,5 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   top: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 6px 50vw #000000de;
+  cursor: zoom-out !important;
 }
