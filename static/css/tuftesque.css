@@ -628,5 +628,5 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 50px black;
+  box-shadow: 0 0 6px 50vw #000000de;
 }
